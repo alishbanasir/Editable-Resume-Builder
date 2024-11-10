@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <form id="resumeform">
+            <h1 class="heading">EDITABLE RESUME BUILDER:</h1>
+            <label for="firstname">First Name:</label>
+            <input type="text" class="input" id="firstname" name="firstname" placeholder="enter your firstname"
+                required>
+            <br><br>
+            <label for="lastname">Last Name:</label>
+            <input type="text" class="input" id="lastname" name="lastname" placeholder="enter your lastname" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" class="input" id="email" name="email" placeholder="enter your email" required>
+            <br><br>
+            <label for="Phonenumber">Phone Number:</label>
+            <input type="number" class="input" id="number" name="number" placeholder="enter your contact no" required>
+            <br><br>
+            <label for="Location">Location:</label>
+            <input type="text" class="input" id="location" name="loaction" placeholder="enter your loaction"
+                required><br><br>
+            <label for="image">Image:</label>
+            <input type="file" class="image" id="image" name="image" accept="image/*" required>
+
+            <br><br>
+            <label for="Education">Education:</label>
+            <textarea name="Education" id="Education" rows="3" placeholder="enter your education" required></textarea>
+
+            <br><br>
+            <label for="Skills">Skills:</label>
+            <textarea name="Skills" id="Skills" rows="3" placeholder="enter your skills" required></textarea>
+
+            <br><br>
+            <label for="Experience">Experience:</label>
+            <textarea name="Experience" id="Experience" rows="3" placeholder="enter your experience" required></textarea>
+            <br>
+            <div class="btn">
+                <button class="btn" type="submit">
+                    <b>Generate</b></button>
+        </form>
+
+        <div id="resumeoutput">
+            <!-- generate -->
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
